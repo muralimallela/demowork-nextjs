@@ -1,14 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
+import Header from "@/components/Header";
 
 function Hero() {
-  
   return (
     <div>
+      <Header />
       <main className="container mx-auto px-4 py-8">
         <div>
           <h1 className="text-4xl text-center text-primary md:text-5xl lg:text-6xl font-bold">
-            ChallanEase
+            <Link href="/">ChallanEase</Link>
           </h1>
         </div>
         <div className="mt-6 flex flex-col md:flex-row items-center md:items-start">
@@ -28,11 +29,8 @@ function Hero() {
               etc. It details the offense, fine amount, and often includes
               information on where and how to pay the fine.
             </h2>
-            <Link href='/login'>
-              <button
-                
-                className="mt-12 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-[100px]"
-              >
+            <Link href="/login">
+              <button className="mt-12 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-[100px]">
                 Begin Your Journey
               </button>
             </Link>
